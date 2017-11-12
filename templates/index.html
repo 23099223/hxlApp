@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PyCoder's Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="pycoder's blog"/>
+    <meta name="keywords" content="blog, python, java, technology, pycoder's blog, www.pycoder.top, pycoder的博客"/>
+
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:description" content=""/>
+    <meta name="twitter:title" content=""/>
+    <meta name="twitter:image" content=""/>
+    <meta name="twitter:url" content=""/>
+    <meta name="twitter:card" content=""/>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="">
+    <!-- jQuery -->
+    <script src="/static/js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="/static/js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="/static/js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="/static/js/jquery.waypoints.min.js"></script>
+    <!-- Flexslider -->
+    <script src="/static/js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="/static/js/canvas-particle.js"></script>
+
+
+    <!-- MAIN JS -->
+    <script src="/static/js/main.js"></script>
+
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="/static/css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="/static/css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="/static/css/flexslider.css">
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!--<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <!-- Modernizr JS -->
+    <script src="/static/js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+	<script src="/static/js/respond.min.js"></script>
+	<![endif]-->
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+          crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+    <style>
+        #gotop {
+            position: fixed;
+            top: 530px;
+            right: 15px;
+            display: none;
+
+        }
+    </style>
+
+</head>
+<body id="mydiv">
+<div id="fh5co-page">
+    <a href="javascript:void(0);" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+    <aside id="fh5co-aside" role="complementary" class="border js-fullheight">
+
+        <h1 id="fh5co-logo"><a href="index.html">PyCoder's Blog</a></h1>
+        <nav id="fh5co-main-menu" role="navigation">
+            <ul>
+                <li class="fh5co-active"><a href="{% url 'index' %}">首页</a></li>
+                <li><a href="{% url 'blogs' %}">博客</a></li>
+                <li><a href="portfolio.html">分类</a></li>
+                <li><a href="about.html">关于</a></li>
+                <li><a href="contact.html">标签</a></li>
+            </ul>
+        </nav>
+
+        <div class="fh5co-footer">
+            <p>
+                <small>&copy; Created in 2017. All Rights Reserved.</span> <span>Web site address <a href="http://www.pycoder.top" target="_blank" title="PyCoder's Blog">PyCoder's Blog</a>
+{#                    - Collect from <a#}
+{#                        href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>#}
+               </span></small>
+            </p>
+            <ul>
+                <li><a href="javascript:void(0);"><i class="icon-facebook2"></i></a></li>
+                <li><a href="javascript:void(0);"><i class="icon-twitter2"></i></a></li>
+                <li><a href="javascript:void(0);"><i class="icon-instagram"></i></a></li>
+                <li><a href="javascript:void(0);"><i class="icon-linkedin2"></i></a></li>
+            </ul>
+        </div>
+
+    </aside>
+
+    <div id="fh5co-main">
+        <aside id="fh5co-hero" class="js-fullheight">
+            <div class="flexslider js-fullheight">
+                <ul class="slides">
+                    <li style="background-image: url(/static/images/img_bg_1.jpg);">
+                        <div class="overlay"></div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
+                                    <div class="slider-text-inner">
+                                        <h1>Welcome to my blog</h1>
+                                        <h2>Web site address <a href="http://www.pycoder.top" target="_blank" title="PyCoder's Blog">PyCoder's Blog</a></h2>
+                                        <p><a class="btn btn-primary btn-demo popup-vimeo" href="https://vimeo.com/channels/staffpicks/93951774"> <i class="icon-monitor"></i> Live Preview</a> <a
+                                                class="btn btn-primary btn-learn" href="{% url 'blogs' %}">Learn More<i class="icon-arrow-right3"></i></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="background-image: url(/static/images/img_bg_2.jpg);">
+                        <div class="overlay"></div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
+                                    <div class="slider-text-inner">
+                                        <h1>Welcome to my blog</h1>
+                                        <h2>Web site address <a href="http://www.pycoder.top" target="_blank" title="PyCoder's Blog">PyCoder's Blog</a></h2>
+                                        <p><a class="btn btn-primary btn-demo popup-vimeo" href="https://vimeo.com/channels/staffpicks/93951774"> <i class="icon-monitor"></i> Live Preview</a> <a
+                                                class="btn btn-primary btn-learn" href="{% url 'blogs' %}">Learn More<i class="icon-arrow-right3"></i></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="background-image: url(/static/images/img_bg_3.jpg);">
+                        <div class="overlay"></div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
+                                    <div class="slider-text-inner">
+                                        <h1>Welcome to my blog</h1>
+                                        <h2>Web site address <a href="http://www.pycoder.top" target="_blank" title="PyCoder's Blog">PyCoder's Blog</a></h2>
+                                        <p><a class="btn btn-primary btn-demo popup-vimeo" href="https://vimeo.com/channels/staffpicks/93951774"> <i class="icon-monitor"></i> Live Preview</a> <a
+                                                class="btn btn-primary btn-learn" href="{% url 'blogs' %}">Learn More<i class="icon-arrow-right3"></i></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" title="网站模板">网站模板</a></div>
+
+        <div class="fh5co-narrow-content">
+            <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">最近博客</h2>
+            <div class="row row-bottom-padded-md">
+                <div class="col-md-3 col-sm-6 col-padding animate-box" data-animate-effect="fadeInLeft">
+                    <div class="blog-entry">
+                        <a href="javascript:void(0);" class="blog-img"><img src="/static/images/img-1.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+                        <div class="desc">
+                            <h3><a href="javascript:void(0);">Inspirational Website</a></h3>
+                            <span><small> 发表于:2017-11-03 </small> / <small> 分类:Python </small> / <small> <i class="icon-comment"></i> 阅读次数:100</small></span>
+                            <p><a href="javascript:void(0);" style="color: rgb(0, 0, 7);">我与Python的前世今生</a></p>
+                            <a href="javascript:void(0);" class="lead">阅读全文 <i class="icon-arrow-right3"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-padding animate-box" data-animate-effect="fadeInLeft">
+                    <div class="blog-entry">
+                        <a href="javascript:void(0);" class="blog-img"><img src="/static/images/img-2.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+                        <div class="desc">
+                            <h3><a href="javascript:void(0);">Inspirational Website</a></h3>
+                            <span><small>by Admin </small> / <small> Web Design </small> / <small> <i class="icon-comment"></i> 14</small></span>
+                            <p>Design must be functional and functionality must be translated into visual aesthetics</p>
+                            <a href="javascript:void(0);" class="lead">Read More <i class="icon-arrow-right3"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-padding animate-box" data-animate-effect="fadeInLeft">
+                    <div class="blog-entry">
+                        <a href="javascript:void(0);" class="blog-img"><img src="/static/images/img-3.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+                        <div class="desc">
+                            <h3><a href="javascript:void(0);">Inspirational Website</a></h3>
+                            <span><small>by Admin </small> / <small> Web Design </small> / <small> <i class="icon-comment"></i> 14</small></span>
+                            <p>Design must be functional and functionality must be translated into visual aesthetics</p>
+                            <a href="javascript:void(0);" class="lead">Read More <i class="icon-arrow-right3"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-padding animate-box" data-animate-effect="fadeInLeft">
+                    <div class="blog-entry">
+                        <a href="javascript:void(0);" class="blog-img"><img src="/static/images/img-4.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+                        <div class="desc">
+                            <h3><a href="javascript:void(0);">Inspirational Website</a></h3>
+                            <span><small>by Admin </small> / <small> Web Design </small> / <small> <i class="icon-comment"></i> 14</small></span>
+                            <p>Design must be functional and functionality must be translated into visual aesthetics</p>
+                            <a href="javascript:void(0);" class="lead">Read More <i class="icon-arrow-right3"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-bottom-padded-md">
+                <div class="col-md-3 col-sm-6 col-padding animate-box" data-animate-effect="fadeInLeft">
+                    <div class="blog-entry">
+                        <a href="javascript:void(0);" class="blog-img"><img src="/static/images/img-1.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+                        <div class="desc">
+                            <h3><a href="javascript:void(0);">Inspirational Website</a></h3>
+                            <span><small>发表于:2017-11-02 </small> / <small> 分类:Python </small> / <small> <i class="icon-comment"></i> 阅读次数:100</small></span>
+                            <p>文章标题</p>
+                            <a href="javascript:void(0);" class="lead">阅读全文 <i class="icon-arrow-right3"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-padding animate-box" data-animate-effect="fadeInLeft">
+                    <div class="blog-entry">
+                        <a href="javascript:void(0);" class="blog-img"><img src="/static/images/img-2.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+                        <div class="desc">
+                            <h3><a href="javascript:void(0);">Inspirational Website</a></h3>
+                            <span><small>by Admin </small> / <small> Web Design </small> / <small> <i class="icon-comment"></i> 14</small></span>
+                            <p>Design must be functional and functionality must be translated into visual aesthetics</p>
+                            <a href="javascript:void(0);" class="lead">Read More <i class="icon-arrow-right3"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-padding animate-box" data-animate-effect="fadeInLeft">
+                    <div class="blog-entry">
+                        <a href="javascript:void(0);" class="blog-img"><img src="/static/images/img-3.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+                        <div class="desc">
+                            <h3><a href="javascript:void(0);">Inspirational Website</a></h3>
+                            <span><small>by Admin </small> / <small> Web Design </small> / <small> <i class="icon-comment"></i> 14</small></span>
+                            <p>Design must be functional and functionality must be translated into visual aesthetics</p>
+                            <a href="javascript:void(0);" class="lead">Read More <i class="icon-arrow-right3"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-padding animate-box" data-animate-effect="fadeInLeft">
+                    <div class="blog-entry">
+                        <a href="javascript:void(0);" class="blog-img"><img src="/static/images/img-4.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+                        <div class="desc">
+                            <h3><a href="javascript:void(0);">Inspirational Website</a></h3>
+                            <span><small>by Admin </small> / <small> Web Design </small> / <small> <i class="icon-comment"></i> 14</small></span>
+                            <p>Design must be functional and functionality must be translated into visual aesthetics</p>
+                            <a href="javascript:void(0);" class="lead">Read More <i class="icon-arrow-right3"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="gotop">
+            <a href="#fh5co-main" class="glyphicon glyphicon-arrow-up" style="color: rgb(0, 0, 7); font-size: 15px;"></a>
+        </div>
+
+        <!--glyphicon glyphicon-arrow-up
+            <ul><a href="#fh5co-main" class="glyphicon glyphicon-circle-arrow-up" style="color: black"></a>
+                <li><a href="javascript:void(0);"><i class="glyphicon glyphicon-arrow-up"></i></i></a></li>
+            </ul>
+        -->
+        <!--
+                    <div id="get-in-touch">
+                        <div class="fh5co-narrow-content">
+                            <div class="row">
+                                <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+                                    <h1 class="fh5co-heading-colored">Get in touch</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+                                    <p class="fh5co-lead">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                                    <p><a href="javascript:void(0);" class="btn btn-primary">Learn More</a></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+        -->
+    </div>
+</div>
+
+
+<script>
+    window.onload = function () {
+        //配置
+        var config = {
+            vx: 4,	//小球x轴速度,正为右，负为左
+            vy: 4,	//小球y轴速度
+            height: 2,	//小球高宽，其实为正方形，所以不宜太大
+            width: 2,
+            count: 200,		//点个数
+            color: "121, 162, 185", 	//点颜色
+            stroke: "130,250,250", 		//线条颜色
+            dist: 6000, 	//点吸附距离
+            e_dist: 10000, 	//鼠标吸附加速距离
+            max_conn: 200 	//点到点最大连接数
+        }
+
+        //调用
+        CanvasParticle(config);
+    }
+    $(document).bind('scroll', function () {
+        var len = $(this).scrollTop()
+        if (len >= 500) {
+            $("#gotop").css("display", 'block')
+
+        } else {
+            $("#gotop").css("display", 'none')
+
+        }
+
+
+    })
+
+</script>
+</body>
+</html>
+
