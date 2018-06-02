@@ -1,11 +1,4 @@
 from django.shortcuts import render
-from django.views.decorators.csrf import csrf_exempt
-import json
-import os
-import datetime
-from django.forms.models import model_to_dict
-from django.http import HttpResponse
-from django.http import HttpResponseRedirect
 import blog.models as models
 
 
